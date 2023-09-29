@@ -1,0 +1,28 @@
+.chat_display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  min-width: 50%;
+  width: 1000px;
+  max-width: 80%;
+  text-align: center;
+  height: 300px;
+}
+
+.gray {
+  color: #80808033;
+}
+
+@media (max-width: 768px) {
+  .chat_display {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .chat_display {
+    font-size: 1.3rem;
+  }
+}

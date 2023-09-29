@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/Index.css" />
+    <link rel="stylesheet" href="./src/style/Main.css" />
+    <link rel="stylesheet" href="./src/style/AiConversationIndicator.css" />
+    <link rel="stylesheet" href="./src/style/TexInput.css" />
+    <link rel="stylesheet" href="./src/style/ChatDisplay.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <section class="message_storage_section"></section>
+      <section class="ai_interation_section">
+        <div id="conversation_indicator" class="conversation_indicator inner-shadow"></div>
+
+        <div id="chat_display" class="chat_display">
+          <p>Hello how can I assist you today?</p>
+        </div>
+
+        <form class="form">
+          <div>
+            <textarea
+              id="text_area"
+              class="text_area"
+              name="textInput"
+              placeholder="Send a message"
+            ></textarea>
+          </div>
+          <button
+            id="send_button"
+            class="send_button send_button_disable"
+            type="submit"
+          >
+            <img class="send_button_disable_img" src="./assets/icons8-send-48.png" alt="send" />
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script type="module" src="./src/script/WebSocketConnetion.js"></script>
+    <script type="module" src="./src/script/TextInputLogic.js"></script>
+  </body>
+</html>
